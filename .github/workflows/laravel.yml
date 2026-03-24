@@ -47,7 +47,7 @@ jobs:
         DB_CONNECTION: mysql
         DB_HOST: 127.0.0.1
         DB_PORT: 3306
-        DB_DATABASE: Laravel_database
+        DB_DATABASE: Laravel_test
         DB_USERNAME: root
-        DB_PASSWORD: YourStrongPassword123!
-      run: php artisan migrate
+        DB_PASSWORD: password
+      run: php artisan migrate --force
