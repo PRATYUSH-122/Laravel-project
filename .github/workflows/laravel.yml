@@ -22,7 +22,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    
+
     - name: Setup PHP
       uses: shivammathur/setup-php@v2
       with:
@@ -48,6 +48,6 @@ jobs:
         DB_HOST: 127.0.0.1
         DB_PORT: 3306
         DB_DATABASE: Laravel_database
-        DB_USERNAME: laravel_user
+        DB_USERNAME: root
         DB_PASSWORD: YourStrongPassword123!
       run: php artisan migrate
